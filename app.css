@@ -32,6 +32,7 @@ main{
     align-items: center;
     gap: 1rem;
 }
+
 .movie-holder a{
     flex: 1;
 }
@@ -63,6 +64,7 @@ main{
     width: auto;
     height: 250px;
 }
+
 #booker{
     display: flex;
     flex-direction: column;
@@ -94,6 +96,7 @@ main{
 #booking-grid-undefined{
     font-size: auto;
 }
+
 .seat{
     display: grid;
     place-content: center;
@@ -110,10 +113,10 @@ main{
 }
 
 .d-none{
-    display: block;
+    display: none;
 }
 .v-none{
-    visibility: visible;
+    visibility: hidden;
 }
 input, button[type="submit"]{
     width: 200px;
