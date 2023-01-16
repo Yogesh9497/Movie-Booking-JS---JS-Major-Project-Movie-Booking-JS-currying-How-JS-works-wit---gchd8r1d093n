@@ -49,7 +49,7 @@ async function renderSeatsGrid(movieName) {
 }
 
 function renderSeats(data) {
-     if(booker.firstElementChild.tagName !== "h3"){
+     if(booker.firstElementChild.tagName !== "H3"){
           seatsSelected = [];
           booker.innerHTML = `<h3 class="v-none">Seat Selector</h3>
                               <div id="booker-grid-holder"></div>
@@ -85,7 +85,7 @@ let seatsSelected = [];
 function setEventsToSeats() {
      let AvaliableSeats = document.querySelectorAll('.available-seat');
      AvaliableSeats.forEach(seat => {
-          seat.addEventListener('click', () => {
+          seat.addEventListener('click', _ => {
                saveSelectedSeat(seat);
           })
      })
@@ -162,4 +162,3 @@ function createSuccessMessage(email, phone){
                               <p>Phone number: ${phone}</p>`;
      booker.appendChild(successElement);
 }
-
